@@ -12,10 +12,10 @@ const app = express();
 
 //middleware to handle cors
 const corsOptions = {
-  origin: process.env.CLIENT_URL, // do NOT use "*" if sending Authorization header
+  origin: process.env.CLIENT_URL, 
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
-  credentials: true, // allow cookies/auth headers
+  credentials: true,
 };
 
 app.use(cors(corsOptions));
